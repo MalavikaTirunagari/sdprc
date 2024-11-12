@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI-Powered News Aggregator</h1>
+            <img src="https://r2.erweima.ai/i/0cx5AKElQbaENISqEXoXDg.png" alt="Logo" class="logo">
+        </header>
+
+        <!-- Step 1: Enter News Content -->
+        <div id="news-entry" class="content-section">
+            <h2>Enter News Content</h2>
+            <p>Please enter the full news content below:</p>
+            <textarea id="news-content" rows="8" placeholder="Enter the news content here..."></textarea>
+            <button onclick="submitNews()">Submit News Content</button>
+        </div>
+
+        <!-- Step 2: Enter Headline to Search News Content -->
+        <div id="headline-entry" class="content-section" style="display: none;">
+            <h2>Search News by Headline</h2>
+            <p>Enter a headline or keyword to search in the news content:</p>
+            <input type="text" id="headline" placeholder="Enter a headline or keyword...">
+            <button onclick="searchNews()">Search News</button>
+        </div>
+
+        <div id="news-results" class="news-results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
